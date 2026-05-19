@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZAKURA | ESTÉREO URBANO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap");
+:root {
+    --obsidian: #050505;
+    --charcoal: #1A1A1A
+    }
+body {
+    background-color: var(--obsidian);
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth
+    }
+.cinematic-grain::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD5oh_Ie_DgdMilG9Mx90qY1JFg6YjAfQqHsQzEXjjmHOb3tVvSCro91-yNjkt-SWccV2KI0EU6wkCX6snhY9ktLCUcRPhvOWONqWqy6nHK0rizJQvB1SnKweak17sFRZ8Ej_bfKTihY-WZv2NoDtwYu4xsrE4aBLEPIyaV5ggOdVo0Z7TCqtCLR167qSQH7LVF031QPmIRxd1hzPeXmXyA1ygagWuWC9uPNb1NQ-VHiL6OKkv4ecN3_knpRX-fmXueFYbGwE6L0sqt);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 999
+    }
+.mask-gradient {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
+    }
+.text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent
+    }
+.hover-lift {
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0.2, 1)
+    }
+.hover-lift:hover {
+    transform: translatey(-8px)
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+::-webkit-scrollbar {
+    width: 4px
+    }
+::-webkit-scrollbar-track {
+    background: var(--obsidian)
+    }
+::-webkit-scrollbar-thumb {
+    background: #444
+    }</style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#2f3131",
+                        "tertiary-container": "#e5e2e1",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "background": "#121314",
+                        "on-surface-variant": "#c4c7c8",
+                        "surface-container-highest": "#343535",
+                        "outline-variant": "#444748",
+                        "primary": "#ffffff",
+                        "surface-container-lowest": "#0d0e0f",
+                        "surface-container-low": "#1b1c1c",
+                        "on-background": "#e4e2e2"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-edge": "40px",
+                        "element-loose": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "technical-sm": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "120%", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["84px", {"lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "technical-sm": ["12px", {"lineHeight": "140%", "letterSpacing": "0.1em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "160%", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="cinematic-grain">
+<!-- TopNavBar -->
+<header class="bg-background/80 dark:bg-background/80 backdrop-blur-xl border-b border-outline-variant/30 docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-margin-edge py-6">
+<div class="flex items-center gap-8">
+<span class="text-headline-md font-headline-md tracking-widest text-primary dark:text-primary uppercase">ZAKURA</span>
+<nav class="hidden md:flex gap-6">
+<a class="text-primary dark:text-primary border-b border-primary pb-1 font-label-md text-label-md" href="#">Collections</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Drops</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Editorial</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary scale-95 duration-200">search</button>
+<button class="material-symbols-outlined text-primary scale-95 duration-200">shopping_cart</button>
+<button class="md:hidden material-symbols-outlined text-primary">menu</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-60" data-alt="A cinematic, high-contrast black and white photograph of a model in oversized techwear streetwear standing in a foggy, brutalist architectural setting. The lighting is dramatic and moody, casting deep shadows while highlighting the technical textures of the garments. The atmosphere is mysterious and urban, perfectly capturing the luxury underground fashion aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMwumBk7TmGNx2pBpsJPM8DcFdmn96QdhQM0QAtEDp5kATpe0qC5PDc9PVtjPIw1fjZPab7lmbQBMEhaOHGuraawIQNi5j2H-QcZKWcodt_s21RicPJHys15f5H3aD-WIhPWoLTh6tpJCyWDk-GmkRdWS6tPESU5cD8v0bPaV1DPszn2veQn-VS8CVsRLrSZ-Wsqfs9kkKLlXp1qGMQmwpWdvBdToarT3MY1CX0pcZSP3hEwT9Ua6h75FyKSNOPMMUShVk2_1axUvK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+<div class="relative z-10 text-center px-6">
+<div class="mb-4">
+<span class="font-technical-sm text-technical-sm tracking-[0.3em] uppercase opacity-60">EST. 2024 • SAN LUIS</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[180px] leading-none mb-8 tracking-tighter">ZAKURA</h1>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-8">
+<div class="text-left space-y-1">
+<p class="font-label-md text-label-md uppercase opacity-80">IDENTIDAD</p>
+<p class="font-label-md text-label-md uppercase opacity-80">ACTITUD</p>
+<p class="font-label-md text-label-md uppercase opacity-80">CULTURA</p>
+</div>
+<button class="bg-primary text-on-primary px-12 py-5 font-label-md text-label-md font-bold uppercase transition-transform active:scale-95">
+                    ENTER THE VOID
+                </button>
+<div class="hidden lg:block w-[1px] h-20 bg-primary/20"></div>
+<div class="text-right">
+<p class="font-display-lg text-headline-md leading-none mb-1">ESTÉREO URBANO</p>
+<p class="font-technical-sm text-technical-sm opacity-50 uppercase">CLASSIFIED VOL. 01</p>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-margin-edge flex gap-4 items-center">
+<div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+<span class="font-technical-sm text-technical-sm">LIVE FEED / DROP_01</span>
+</div>
+</section>
+<!-- Current Drops (Bento Grid) -->
+<section class="px-margin-edge py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-element-loose gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md uppercase mb-2">Current Drops</h2>
+<p class="font-technical-sm text-technical-sm opacity-60 uppercase">Limited availability. No restocks.</p>
+</div>
+<a class="font-label-md text-label-md border-b border-primary/30 pb-1 hover:border-primary transition-colors" href="#">VIEW ALL DROPS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Featured -->
+<div class="md:col-span-8 group relative overflow-hidden bg-charcoal aspect-[4/5] md:aspect-auto md:h-[700px]">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist fashion portrait of a model wearing a heavy black puffer jacket and a branded mask, standing against a dark urban clock tower background. The lighting is harsh and direct, creating high-contrast highlights and deep obsidian shadows. The mood is aggressive yet sophisticated, reflecting a high-end streetwear editorial style in black and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBGNo0-tuqMMZ3aGjuoUeHcIyC1G5zXUnquwQimXDTBKW3I8WsRKYEC_id-PQJvCsJUjE2dIs3s7h586jk0qhUbNW6hOf3uYDCscd4ZZFr6e9BKsAwozK9QTf0fEQQy21SpvPeQqhDUpUAVLHptKwCi4KEHlLQPPK8V7O3Md4Ku_NU-PtiPM_ejs5EJz89tQkZWlnZAebIaf7eiNZmRgSDLuPLZb0jyr9GdfxIX0cgezycgclQqkqJQDxrIQNBfg2BZSY9TXEcjiJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10">
+<span class="font-technical-sm text-technical-sm text-primary/60 mb-2 uppercase">Core Collection</span>
+<h3 class="font-headline-md text-headline-md mb-6">"OBSIDIAN" PUFFER JACKET</h3>
+<button class="w-max border border-primary px-8 py-4 font-label-md text-label-md uppercase hover:bg-primary hover:text-on-primary transition-colors">SHOP DROP 01</button>
+</div>
+</div>
+<!-- Side Bento Items -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="bg-charcoal flex-1 p-8 relative group overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="Close-up technical shot of a high-end streetwear garment showcasing intricate stitching and metallic hardware. The fabric is a deep matte charcoal grey, and the lighting is soft and cinematic, emphasizing the high-quality construction. The visual style is minimal and industrial, using monochromatic tones to convey luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtZWUfWiw9B0xKGVmN0KHan-g-lD_xA5sYb72vq4LMA-CfZmyOGlSr_7Gfbdj7hFLMJjtzGZjKx9h57YGS0KNjt7duVGVMKa5wrBhsHZNWEK0XAAhPRWs4x7-PFVP4EoteVs7V0THf4ZEZOqQPSym404ZH51uhSH7B9qd7MOr3EneikcTxxZmseIduglM0gJg6pajqUY3g0bBtqf-c85mhXisGmSAnt4MqgFPv2M410QQH3KSAWUOdEndDVcLssh64R6iv_FaSyxpJ"/>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<span class="font-technical-sm text-technical-sm">ZK_ACC_04</span>
+<div>
+<h4 class="font-label-md text-headline-md mb-2">TACTICAL VEST</h4>
+<p class="font-technical-sm text-technical-sm uppercase opacity-60">$240.00 USD</p>
+</div>
+</div>
+</div>
+<div class="bg-charcoal flex-1 p-8 relative group overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="A focused shot of high-end streetwear sneakers resting on a concrete surface in a dimly lit garage setting. The shoes feature a complex, layered design in varying shades of black and dark grey. Subtle white highlights catch the edges of the technical materials, creating a sharp, modern look that aligns with a cinematic luxury brutalist theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwiwEEaYYojO17t52sznnSrUv6whqkYKx9Rgpp9kohvapY65BXETfE29_sOQYUQIIDDGKfA3PGbyMjigevBtIUx5X8S3j8pC6Hre7yaH8-70oSiiXxCwAYB4G21sNWxIgOMPeG0DMr3deIq2mf1vbKslmaJjF2MXAi1uVJ0HJipl1mesME-U4P78drKSgKs6oP_qRoIxH-x48aJwXe0OaqkvT1aycMgSafaXx99taC2HZpgmnJsBEoahm3Dm94dbRbG9UzONt54hds"/>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<span class="font-technical-sm text-technical-sm">ZK_FW_12</span>
+<div>
+<h4 class="font-label-md text-headline-md mb-2">VOID RUNNERS</h4>
+<p class="font-technical-sm text-technical-sm uppercase opacity-60">$380.00 USD</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Lookbook (Large Horizontal Scroll Style) -->
+<section class="bg-surface-container-low py-section-gap overflow-hidden">
+<div class="px-margin-edge mb-element-loose">
+<h2 class="font-display-lg text-headline-md uppercase text-stroke">EDITORIAL LOOKBOOK</h2>
+<p class="font-technical-sm text-technical-sm opacity-50 uppercase tracking-widest mt-2">VOL. 01 — IDENTITY &amp; CULTURE</p>
+</div>
+<div class="flex gap-12 overflow-x-auto pb-12 px-margin-edge no-scrollbar snap-x cursor-grab" id="lookbook-scroll">
+<div class="flex-shrink-0 w-[80vw] md:w-[600px] snap-center">
+<img class="w-full h-[800px] object-cover grayscale" data-alt="Fashion editorial image of a model leaning against a weathered urban concrete wall. The model is wearing a oversized black hoodie with white avant-garde graphics. The scene is shot with high-grain film texture, creating a raw and authentic underground mood. The lighting is overcast, providing soft but deep shadows across the architectural elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxI1ECEB3Xxv1AgmILWt6z2eflfPIE4EsKqJEddAjKWXnhtgZiZ2GDIbXUUUYcCkxbnobfNflBo01lioo-9MTiSaAgqfx50BHCI5dUkJfZvtdssVyeG3ZsNjWqDsgnmdOl_x896pUY_ZKwKJwxKuQ_8VJovn6dhIKzBhGRm_QwoTfNDD8Ti67Zflu25tu-BDQOUzYx48N3P1bxyCnk0CgR6QgHqiVkMbZNUvpUySWjvU_TIAY5V10V6JpY-GxE-B6IVWEWsYqVm-ai"/>
+<p class="font-technical-sm text-technical-sm mt-6 uppercase">01 / ESTRUCTURA URBANA</p>
+</div>
+<div class="flex-shrink-0 w-[80vw] md:w-[600px] snap-center">
+<img class="w-full h-[800px] object-cover grayscale" data-alt="Editorial streetwear shot of a model wearing minimalist but bold fashion pieces. The background features blurred neon lights of a night city, but processed in high-contrast black and white to maintain the obsidian aesthetic. The focus is sharp on the model's expression and the texture of their clothing, conveying a sense of mystery and exclusivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQgZ7o6yKO_cfC9pY2-LT4PIsHiZzMiekvj0LmH3-zDSKucSw2VV4gf0s9XMqkKRi6mM0MbRdNxL0aQ45L7DcPoYvENEf9qIUWCH1Sq2Q0Q_BxqkGAx1hgX1QdJ4EUXocXIzQNvJif8VGTQ42GBywsCE3-yxWt-7FAoQ8X4GvZ40vd6MtftO_ffXbCAUaZAE3aByn47KACVqlXsg0shX47r0x5ZXYeLo5_zgdmawtbEBs2z34YFETHeMp5CF1zZSZtD-SyWKy_Grk9"/>
+<p class="font-technical-sm text-technical-sm mt-6 uppercase">02 / LUZ Y SOMBRA</p>
+</div>
+<div class="flex-shrink-0 w-[80vw] md:w-[600px] snap-center">
+<img class="w-full h-[800px] object-cover grayscale" data-alt="Monochromatic fashion lookbook photo featuring a model in a technical parka jacket. The setting is a dark, industrial interior with subtle smoke effects drifting through the frame. The lighting creates a rim-light effect around the silhouette, emphasizing the sharp, angular cuts of the garment. The overall mood is cold, clinical, and futuristic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRmhWneEdipFV71Nua-DD0v9Q9PHJv8UXtF_dmjPBG2zFjszNO_Tzkv1DBZ7YUJM9EequHw49iCt08OeRp_2K5S3k0wZueyyCeHIzCQz2XEI2lr3ObG1yCXrwvriOezJxsFnpLPg1h-RColLDFd5LipXdezfmmq8qsO6-oytgIT5sBQc28eHqnxnRXzXJ5Mf9FU_rZRJDllTm4nkWvEfbi7XvrClleUAXkQG6JQZQnCnUB3qCPnLWcsiO5-F2AjESoO_45lusVI-s5"/>
+<p class="font-technical-sm text-technical-sm mt-6 uppercase">03 / EL VACÍO</p>
+</div>
+</div>
+</section>
+<!-- Brand Statement -->
+<section class="py-section-gap px-margin-edge text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-4xl mb-8 opacity-40">language</span>
+<h2 class="font-display-lg text-headline-md md:text-[54px] leading-tight mb-12">ZAKURA ES LA INTERSECCIÓN ENTRE EL BRUTALISMO ARQUITECTÓNICO Y LA CULTURA URBANA ARGENTINA.</h2>
+<div class="flex flex-wrap justify-center gap-12">
+<div class="text-center">
+<p class="font-technical-sm text-technical-sm opacity-50 mb-2">Ubicación</p>
+<p class="font-label-md text-label-md">SAN LUIS, AR</p>
+</div>
+<div class="text-center">
+<p class="font-technical-sm text-technical-sm opacity-50 mb-2">Fundación</p>
+<p class="font-label-md text-label-md">MMXXIV</p>
+</div>
+<div class="text-center">
+<p class="font-technical-sm text-technical-sm opacity-50 mb-2">Filosofía</p>
+<p class="font-label-md text-label-md">DIFERENTE</p>
+</div>
+</div>
+</section>
+<!-- Featured Items List -->
+<section class="px-margin-edge py-section-gap">
+<h3 class="font-technical-sm text-technical-sm uppercase tracking-[0.4em] mb-12 opacity-50">ITEMS SELECCIONADOS</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="group cursor-pointer hover-lift">
+<div class="aspect-[3/4] bg-charcoal mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-500" data-alt="A product shot of a minimalist black hoodie with a discrete white logo on the chest. The garment is displayed on a high-contrast background with sharp shadows, highlighting the heavy-weight cotton texture. The lighting is cinematic, making the simple item look premium and exclusive within a dark luxury streetwear context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ9nT4sv-Tuuva5GPm0lILHdcN6ZIgZI5P7DHtEKNWLQWS8xPkHzIS3_jTZJi8YqtB9-Paml-7bxyPoTP6zDbKnCtLgnEmiPd7h8iFtljAq-RaWtMuea-su9iwc81448rMBLSe0XJb2k0zw-BZ3yNafKhVDd78Th5IK1dgFNZ2UvlEHTBoCpDbKMyTKEWitrcJQcc5Prg-06E8SY7qhdUMNHVYSyevuV2mVZqnSJsKOES-vMEyPP6wAESeKtXkbNCc9M85GZo5ufbZ"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-technical-sm text-[10px]">NEW</div>
+</div>
+<h4 class="font-label-md text-label-md mb-1">GRAPHIC HOODIE V1</h4>
+<p class="font-technical-sm text-technical-sm opacity-50">$120.00 USD</p>
+</div>
+<div class="group cursor-pointer hover-lift">
+<div class="aspect-[3/4] bg-charcoal mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-500" data-alt="A high-contrast product image of distressed black denim pants. The jeans feature unique technical details like oversized pockets and reinforced stitching. The lighting is focused and dramatic, emphasizing the rough texture of the denim and the depth of the obsidian black color, creating a raw and urban aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyIs0asGbpzNUZl-p74zMZbQkDeO8q4GrOkdERPsB_IP4nbyj_MhogtjfrJ_-jJUtMtKrxK771hlURFTYfcbt_unL9JNZZj_dbFb7Uyj3TeXywof4EjSFFQPJ5qZxFQxiPHxYcJ2RBQuA_0mH__NHQK8h7_yTQrE3dVwMHOb1RhFMB8rp2NIOpWeOJIhxoLkIQxMlFZM0hnSVvA_cPr6xbub1nVHJZakoJleARkV-KGfBiO9_JRlzF6_RmvUDWShV6OQVt0BzD2_r2"/>
+</div>
+<h4 class="font-label-md text-label-md mb-1">DISTRESSED CARGO</h4>
+<p class="font-technical-sm text-technical-sm opacity-50">$180.00 USD</p>
+</div>
+<div class="group cursor-pointer hover-lift">
+<div class="aspect-[3/4] bg-charcoal mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-500" data-alt="Product photography of a heavy-knit oversized sweater in a deep charcoal color. The knit pattern is complex and technical, displayed with side-lighting that creates strong texture highlights. The garment looks substantial and warm, suitable for an underground winter look, shot in a professional monochromatic studio style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb6wthYtJYcy5owSNncFgnEM_09ZcsKZoXzzGmjaWSlwyxu9XXzHnUDYt-x2O22J-C3qurkyTINr6FIHZ7cvLdliqK4lwj-mL0n4POBAKMolUNw3trd6qK5EhbcrR6fa6tC9hyyGLjYoYB3-I4hlVl9JF2ICe0UOf-M81xhVxcg2C7x7Zzv-_3zbdhjFFwM29TnnHUI56IxvKagerwdrB9Hx6-8UTLeol4ETI2R9qiynnkh2P9qBrACA36o5luG4xNSKuIkAw2pqJ3"/>
+</div>
+<h4 class="font-label-md text-label-md mb-1">KNIT SWEATER</h4>
+<p class="font-technical-sm text-technical-sm opacity-50">$145.00 USD</p>
+</div>
+<div class="group cursor-pointer hover-lift">
+<div class="aspect-[3/4] bg-charcoal mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of premium streetwear sunglasses with a thick black frame and dark tinted lenses. The glasses are placed on a reflective dark surface, with a single sharp light source creating a dramatic streak of light across the frame. The image is minimalist and high-end, representing the accessory line of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV5rvqPJYkworSXILw9kls6wY96asjTHcWWAvaQWrZJgY7d6G2IXoAjGabQl-OOQ53l8BepAEuC1oIzA8d2N5TL1YCLvFytSG7gZagpJswAyg0FryngYLhMd-n5ML55Z0q9YXpCL4tWT-Er916I1VaS8mAr9c7-6H3wm4fPxceyGcZgrF5YoSolOW4ZmjmA_fwiGIibuk97j3AZ0NcGliTNBCJHt10sIC8gpztjCL_yqKdFg_iNESqQAj9IUvW373IJhJ3FJ27FfiP"/>
+</div>
+<h4 class="font-label-md text-label-md mb-1">VOID EYEWEAR</h4>
+<p class="font-technical-sm text-technical-sm opacity-50">$95.00 USD</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest text-on-surface dark:text-on-surface border-t border-outline-variant/20 full-width bottom-0 flex flex-col md:flex-row justify-between items-center w-full px-margin-edge py-element-loose mt-section-gap">
+<div class="flex flex-col gap-4 mb-8 md:mb-0">
+<span class="text-headline-md font-headline-md text-primary">ZAKURA</span>
+<p class="font-technical-sm text-technical-sm opacity-50 uppercase tracking-widest">EST. 2024 • SAN LUIS, ARGENTINA</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Shipping</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Returns</a>
+</div>
+<p class="text-technical-sm font-technical-sm opacity-60">© 2024 ZAKURA STREETWEAR. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<script>
+        // Smooth horizontal scroll for lookbook
+        const scrollContainer = document.getElementById('lookbook-scroll');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        scrollContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scrollContainer.classList.add('active');
+            startX = e.pageX - scrollContainer.offsetLeft;
+            scrollLeft = scrollContainer.scrollLeft;
+        });
+        scrollContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+        scrollContainer.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+        scrollContainer.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            scrollContainer.scrollLeft = scrollLeft - walk;
+        });
+
+        // Atmospheric parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('section img');
+            if(heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.3}px) scale(${1 + scrolled * 0.0005})`;
+            }
+        });
+    </script>
+</body></html>

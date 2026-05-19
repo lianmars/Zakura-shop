@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZAKURA | ONYX TECH JACKET</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#2f3131",
+                    "tertiary-container": "#e5e2e1",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-tertiary": "#313030",
+                    "surface-tint": "#c6c6c7",
+                    "background": "#121314",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#313030",
+                    "on-surface-variant": "#c4c7c8",
+                    "secondary-container": "#474646",
+                    "surface-bright": "#393939",
+                    "primary-container": "#e2e2e2",
+                    "on-secondary-container": "#b7b4b4",
+                    "on-surface": "#e4e2e2",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-container-highest": "#343535",
+                    "surface-dim": "#121314",
+                    "outline": "#8e9192",
+                    "on-primary-fixed-variant": "#454747",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#303031",
+                    "inverse-surface": "#e4e2e2",
+                    "on-secondary-fixed-variant": "#474646",
+                    "outline-variant": "#444748",
+                    "surface-container-high": "#292a2a",
+                    "error-container": "#93000a",
+                    "secondary": "#c9c6c5",
+                    "tertiary": "#ffffff",
+                    "surface-container-lowest": "#0d0e0f",
+                    "on-primary-fixed": "#1a1c1c",
+                    "primary-fixed": "#e2e2e2",
+                    "surface": "#121314",
+                    "surface-variant": "#343535",
+                    "primary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#656464",
+                    "surface-container-low": "#1b1c1c",
+                    "secondary-fixed-dim": "#c9c6c5",
+                    "on-background": "#e4e2e2",
+                    "inverse-primary": "#5d5f5f",
+                    "tertiary-fixed": "#e5e2e1",
+                    "surface-container": "#1f2020",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-primary-container": "#636565"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "container-max": "1440px",
+                    "gutter": "24px",
+                    "margin-edge": "40px",
+                    "element-tight": "8px",
+                    "element-loose": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Hanken Grotesk"],
+                    "label-md": ["JetBrains Mono"],
+                    "display-mobile": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "technical-sm": ["JetBrains Mono"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "120%", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "display-mobile": ["48px", {"lineHeight": "100%", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "display-lg": ["84px", {"lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "technical-sm": ["12px", {"lineHeight": "140%", "letterSpacing": "0.1em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "160%", "letterSpacing": "0.01em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #050505;
+    color: #e4e2e2;
+    cursor: crosshair
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.film-grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.04;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAUJ7zj4xldEz-C6ydl7jG4E6FDL4uCfLbId1tDne6bXb-0i-RFUmsSmEez8uJN2HpcocsMWKphNSnd92DU90DHnw0cHeSHnno6269RRciLZdQFf99OCDk-NPb2Vk9WkdMzyw8uZo1Fr_BQ6ejsQ1I0KfH36mDYEYCafsBMa5yh24aBYYvjRZwCmwKr2EbTCgynG8H19lyp-bfCH-uvbMc9g5pjK-m09URaI1ksTJK4WElmy24oCpM3sbvWkWYPslQjchl65fXgInby)
+    }
+.editorial-img-container {
+    position: relative;
+    overflow: hidden
+    }
+.editorial-img-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 80%, #050505 100%);
+    pointer-events: none
+    }
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px
+    }
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #121314
+    }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #fff
+    }
+.technical-border {
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    }</style>
+</head>
+<body class="custom-scrollbar">
+<div class="film-grain"></div>
+<!-- TopNavBar Implementation -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-edge py-6">
+<div class="text-headline-md font-headline-md tracking-widest text-primary dark:text-primary uppercase">ZAKURA</div>
+<div class="hidden md:flex gap-10">
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary transition-colors duration-300" href="#">Collections</a>
+<a class="text-primary dark:text-primary border-b border-primary pb-1 text-label-md font-label-md hover:text-primary transition-colors duration-300" href="#">Drops</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary transition-colors duration-300" href="#">Editorial</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary transition-colors duration-300" href="#">About</a>
+</div>
+<div class="flex gap-6 items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-95 duration-200">search</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-95 duration-200">shopping_cart</span>
+</div>
+</nav>
+<main class="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
+<!-- Gallery Section (Left) -->
+<section class="md:col-span-7 flex flex-col">
+<div class="editorial-img-container h-[1024px]">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="A high-fashion streetwear shot of a technical nylon onyx jacket on a model. The setting is a moody urban alley with deep shadows and harsh high-contrast lighting, emphasizing the technical fabric texture. The mood is mysterious and exclusive, utilizing a monochromatic obsidian and charcoal color palette with subtle smoke effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtdU9_exNxbfzSsu3t4LTxja52NJPTjEBNFeL3Sq3_7dvIkOxEC1dko_6dnFI28A7akRhWSL0zmYSYYVOWD7PhRnAro_LS5mIFvPuknaTlYnU467c49BCPdtnk5Q7ZeiRcCSINpmI1D_GtVlZhaE_zUv3QpNEOtwxdyDxB004AL_LAUAQI3x2R6qoUYdoxv95wjGIprTkbKGiLydyWREGcsihvn0YScQz0yniaT-EdSHSl1rMxkAutirfM8Z89xjIBAQuFzU2Ur_oi"/>
+<div class="absolute bottom-10 left-10 text-technical-sm font-technical-sm text-primary/50">
+                    IMG_REF: ZK_24_001 <br/> LOC: [SAN LUIS, ARG]
+                </div>
+</div>
+<div class="editorial-img-container h-[1024px]">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Close up technical detail shot of an onyx streetwear jacket highlighting heavy metal hardware and industrial zippers. The lighting is cold and cinematic, casting long shadows across the dark fabric. The aesthetic is brutalist and minimalist, focusing on the high-end materials and underground authority of the garment design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTQGUB0VgOsXT_Rn1hJVidb-hHNjx5ygMPOh9bHkTImRSyg5CP2v6zknWo1hDaAHW1_qpaadZ08yy1sgOaxHpv-BCCpVsmu3ITYT29cdV25_4V1QaQyPh5Yoj0EDErzL7WeyCE9e2etCz9hBmbeha7wPBiM9YvH1BPVLf1AnY1t91FPCGVJcDr9gIxdd8b92-JAAV9Kulfj09Dqi6zlN1Y2apVDXqRKImbGBu1PbK--jD-0S_sokocDdgQzk8sZKv1UQlNW3E26ddx"/>
+<div class="absolute top-10 right-10 text-technical-sm font-technical-sm text-primary/50 text-right">
+                    FABRIC: REINFORCED NYLON <br/> TECH: WATER_REP_01
+                </div>
+</div>
+<div class="editorial-img-container h-[1024px]">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="An editorial full body shot of a model wearing a futuristic oversized black tech jacket standing in a minimalist concrete structure. The composition uses aggressive negative space and architectural lines to frame the product. The overall vibe is cinematic luxury brutalism, featuring sharp contrasts and a deep charcoal atmospheric glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLLZ1RKqoBr0ffsvmIB4LH6DN_h68TlwM1oyQQNww5DnoscmS5jbkgIRIVMnFckNiZWpEGmAeLyYi0Qhl-6BaeNqYaFv2_MDVasCKZKG-oQRYviU3E9CJooLYyN2rfcwkSzAJQkFfFnUiTAkPbF1cFA8NUCCjX89ObxJGA6p4IV85-9BBg4AqOHxBiBTFVHaMcTMo_jzo1ouQgXjOT55_GCDd_61hWBRh0VD4LUArU5q8y7wspVqQgG3cdM_iN9INxKv2WCFW0QZWH"/>
+</div>
+</section>
+<!-- Product Info Section (Right - Sticky) -->
+<aside class="md:col-span-5 md:sticky md:top-[88px] h-fit md:h-[calc(100vh-88px)] p-margin-edge flex flex-col justify-between overflow-y-auto custom-scrollbar bg-surface-container-lowest">
+<div class="flex flex-col gap-element-loose">
+<!-- Product Header -->
+<header class="flex flex-col gap-2">
+<span class="text-technical-sm font-technical-sm text-outline tracking-[0.2em] uppercase">Limited Release / VOL. 01</span>
+<h1 class="text-display-mobile md:text-headline-md font-headline-md text-primary uppercase">ONYX TECH JACKET</h1>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+<span class="text-headline-md font-headline-md text-primary">$220</span>
+<span class="text-technical-sm font-technical-sm text-outline-variant">ID: 982-ZKR-01</span>
+</div>
+</header>
+<!-- Description -->
+<div class="flex flex-col gap-4">
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-prose">
+                        Diseñada para la movilidad urbana bajo condiciones extremas. Estética técnica de corte agresivo con acabados en negro mate. Una armadura digital para el explorador del concreto.
+                    </p>
+</div>
+<!-- Size Selector -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="text-technical-sm font-technical-sm uppercase text-primary">Talla / Size</span>
+<span class="text-technical-sm font-technical-sm text-outline-variant underline cursor-pointer hover:text-primary transition-all">GUÍA DE TALLAS</span>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="technical-border p-4 text-technical-sm font-technical-sm hover:bg-white hover:text-black transition-all">S</button>
+<button class="technical-border p-4 text-technical-sm font-technical-sm bg-white text-black font-bold">M</button>
+<button class="technical-border p-4 text-technical-sm font-technical-sm hover:bg-white hover:text-black transition-all">L</button>
+<button class="technical-border p-4 text-technical-sm font-technical-sm hover:bg-white hover:text-black transition-all">XL</button>
+<button class="technical-border p-4 text-technical-sm font-technical-sm opacity-30 cursor-not-allowed">XXL</button>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary text-on-primary py-6 text-label-md font-label-md font-bold uppercase tracking-widest hover:bg-transparent hover:text-primary border border-primary transition-all duration-300">
+                    AÑADIR AL ARCHIVO
+                </button>
+<!-- Technical Specs Accordion -->
+<div class="flex flex-col border-t border-outline-variant/30 mt-6">
+<div class="py-6 border-b border-outline-variant/30 group cursor-pointer" onclick="toggleDetails(this)">
+<div class="flex justify-between items-center">
+<span class="text-technical-sm font-technical-sm uppercase text-primary">Detalles Técnicos</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-45">add</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96 group-[.active]:mt-4">
+<ul class="text-technical-sm font-technical-sm text-on-surface-variant space-y-2">
+<li>• MEMBRANA IMPERMEABLE 10K/10K</li>
+<li>• CREMALLERAS YKK AQUAGUARD®</li>
+<li>• SISTEMA DE AJUSTE CORDLOCK INTERNO</li>
+<li>• 4 BOLSILLOS TÁCTICOS EXTERNOS</li>
+</ul>
+</div>
+</div>
+<div class="py-6 border-b border-outline-variant/30 group cursor-pointer" onclick="toggleDetails(this)">
+<div class="flex justify-between items-center">
+<span class="text-technical-sm font-technical-sm uppercase text-primary">Composición y Ajuste</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-45">add</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96 group-[.active]:mt-4">
+<p class="text-technical-sm font-technical-sm text-on-surface-variant">
+                                100% Nylon Balístico reciclado de alta densidad. Corte "Oversized Technical" diseñado para layering. El modelo mide 188cm y usa talla M.
+                            </p>
+</div>
+</div>
+<div class="py-6 border-b border-outline-variant/30 group cursor-pointer" onclick="toggleDetails(this)">
+<div class="flex justify-between items-center">
+<span class="text-technical-sm font-technical-sm uppercase text-primary">Envío y Retornos</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-45">add</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96 group-[.active]:mt-4">
+<p class="text-technical-sm font-technical-sm text-on-surface-variant">
+                                Envío gratuito a todo Argentina en órdenes superiores a $150. Devoluciones aceptadas dentro de los 14 días posteriores a la entrega.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Branding (Inside Sidebar) -->
+<div class="mt-element-loose pt-6 flex justify-between items-center border-t border-outline-variant/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-[1px] bg-primary"></div>
+<span class="text-technical-sm font-technical-sm uppercase tracking-widest">EST. 2024</span>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary transition-all">language</span>
+<span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary transition-all">share</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- Global Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center w-full px-margin-edge py-element-loose mt-section-gap">
+<div class="text-headline-md font-headline-md text-primary mb-6 md:mb-0">ZAKURA</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex gap-6">
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-primary transition-all underline" href="#">Instagram</a>
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-primary transition-all underline" href="#">Twitter</a>
+<a class="text-on-surface-variant text-label-md font-label-md hover:text-primary transition-all underline" href="#">Contact</a>
+</div>
+<div class="text-technical-sm font-technical-sm text-on-surface opacity-80">
+                © 2024 ZAKURA STREETWEAR. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+<script>
+        function toggleDetails(element) {
+            element.classList.toggle('active');
+            
+            // Close others if desired
+            const accordions = document.querySelectorAll('.group');
+            accordions.forEach(acc => {
+                if(acc !== element) {
+                    acc.classList.remove('active');
+                }
+            });
+        }
+
+        // Horizontal scroll fade effect for size selector
+        const sizeContainer = document.querySelector('.grid-cols-5');
+        sizeContainer.addEventListener('wheel', (evt) => {
+            if (window.innerWidth < 768) {
+                evt.preventDefault();
+                sizeContainer.scrollLeft += evt.deltaY;
+            }
+        });
+
+        // Simple mouse follow effect for atmospheric mystery
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            document.documentElement.style.setProperty('--mouse-x', x);
+            document.documentElement.style.setProperty('--mouse-y', y);
+        });
+    </script>
+</body></html>

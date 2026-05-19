@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZAKURA | COLECCIONES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>body {
+    background-color: #050505;
+    color: #e4e2e2;
+    -webkit-font-smoothing: antialiased
+    }
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDJ5ZJ1RAcxbev7DJvjvD5aAPsfr23eTyvIlPPbKfEa0VCZuFNZ7CAmnowVy3QQNzUY6t-ETwY3kkUzApY_ZGL20ZR35CG09aJBpuX5RrWm6755LbwaAtz9Zc2IIOVxATHdx10jFhnG0Se6wQvY5rGoxs20w7lzFXucVVXSQqHlge3bQg87VZ9TKmC1yeeBSdNru3kSXDA_90gduVdGq0WUlH54L1bcK-hiMZmVz6-hR-HB7qhShK1S0eeut0ergVG8EJeL9ZopuORv)
+    }
+.smoke-gradient {
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 0) 0%, rgba(20, 20, 20, 0.8) 100%)
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.editorial-line {
+    height: 1px;
+    background: rgba(142, 145, 146, 0.2);
+    width: 100%
+    }
+@keyframes subtle-float {
+    0% {
+        transform: translateY(0px);
+        } 50% {
+        transform: translateY(-5px);
+        } 100% {
+        transform: translateY(0px);
+        }
+    }
+.float-anim {
+    animation: subtle-float 6s ease-in-out infinite
+    }</style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#2f3131",
+                        "tertiary-container": "#e5e2e1",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-tertiary": "#313030",
+                        "surface-tint": "#c6c6c7",
+                        "background": "#121314",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#313030",
+                        "on-surface-variant": "#c4c7c8",
+                        "secondary-container": "#474646",
+                        "surface-bright": "#393939",
+                        "primary-container": "#e2e2e2",
+                        "on-secondary-container": "#b7b4b4",
+                        "on-surface": "#e4e2e2",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#343535",
+                        "surface-dim": "#121314",
+                        "outline": "#8e9192",
+                        "on-primary-fixed-variant": "#454747",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "inverse-on-surface": "#303031",
+                        "inverse-surface": "#e4e2e2",
+                        "on-secondary-fixed-variant": "#474646",
+                        "outline-variant": "#444748",
+                        "surface-container-high": "#292a2a",
+                        "error-container": "#93000a",
+                        "secondary": "#c9c6c5",
+                        "tertiary": "#ffffff",
+                        "surface-container-lowest": "#0d0e0f",
+                        "on-primary-fixed": "#1a1c1c",
+                        "primary-fixed": "#e2e2e2",
+                        "surface": "#121314",
+                        "surface-variant": "#343535",
+                        "primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-container": "#656464",
+                        "surface-container-low": "#1b1c1c",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "on-background": "#e4e2e2",
+                        "inverse-primary": "#5d5f5f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-container": "#1f2020",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-container": "#636565"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin-edge": "40px",
+                        "element-tight": "8px",
+                        "element-loose": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "display-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "technical-sm": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "120%", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-mobile": ["48px", {"lineHeight": "100%", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "display-lg": ["84px", {"lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "technical-sm": ["12px", {"lineHeight": "140%", "letterSpacing": "0.1em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "160%", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-xl border-b border-outline-variant/30 docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-margin-edge py-6">
+<div class="flex items-center gap-12">
+<a class="text-headline-md font-headline-md tracking-widest text-primary dark:text-primary uppercase" href="#">ZAKURA</a>
+<div class="hidden md:flex gap-8">
+<a class="text-primary dark:text-primary border-b border-primary pb-1 text-label-md font-label-md transition-colors duration-300" href="#">Collections</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="#">Drops</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="#">Editorial</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="scale-95 duration-200 hover:text-primary"><span class="material-symbols-outlined">search</span></button>
+<button class="scale-95 duration-200 hover:text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-label-md md:inline hidden">(0)</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section / Header -->
+<section class="relative h-[614px] md:h-[819px] overflow-hidden flex items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-60" data-alt="A cinematic, wide-angle shot of a high-end streetwear collection editorial. The scene features a model in an urban alleyway at night, wearing a heavy oversized black tech jacket. Deep shadows and stark, artificial highlights from streetlights create a dramatic atmosphere. The aesthetic is heavily inspired by Luxury Brutalism with dark tones and sharp contrasts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByL7h9EwsMOWoU0zEwhhmHvToT99NYWpKTOH6PfJE0gZNOH55NBZ8U4w4DJSVI5hD8mDlm43dy72NOaz7SUk0nTT6oISAjJvdA-oDbmswMYEMjBzrS2F8pCafuxoeuEO2NFb0nVBVhzX1bXbVPtvfuVZS5YMYbudh5oUI5ik9LNrIIGbCXrB1zCNxiACTJQ8uhMm9YtAYcokOGGfZE7w4SEiY9ObxNSKcRdBuQRzVvRzbhLhcsFGb328g9C6XkfW_pDVFefE4x9_ke"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="relative z-10 text-center space-y-4 px-margin-edge">
+<p class="font-technical-sm text-technical-sm tracking-[0.4em] text-outline uppercase">Volume 01 / Drop 2024</p>
+<h1 class="font-display-lg text-display-lg uppercase tracking-tighter">COLECCIONES</h1>
+<div class="flex justify-center items-center gap-4">
+<span class="editorial-line max-w-[100px]"></span>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary">Drop 01: ONYX</p>
+<span class="editorial-line max-w-[100px]"></span>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="sticky top-[84px] z-40 bg-background/90 backdrop-blur-md py-8 border-b border-outline-variant/10">
+<div class="px-margin-edge max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex gap-10 overflow-x-auto w-full md:w-auto no-scrollbar">
+<button class="text-primary font-label-md text-label-md whitespace-nowrap border-b border-primary pb-1">TODO</button>
+<button class="text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-primary transition-colors">HOODIES</button>
+<button class="text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-primary transition-colors">PANTS</button>
+<button class="text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-primary transition-colors">JACKETS</button>
+<button class="text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:text-primary transition-colors">ACCESSORIES</button>
+</div>
+<div class="flex items-center gap-4 w-full md:w-auto justify-end">
+<button class="flex items-center gap-2 border border-outline-variant/30 px-6 py-2 hover:bg-white hover:text-black transition-all">
+<span class="font-label-md text-label-md uppercase">FILTRAR POR ARCHIVO</span>
+<span class="material-symbols-outlined text-sm">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Product Grid (Asymmetric Editorial Style) -->
+<section class="mt-element-loose px-margin-edge max-w-container-max mx-auto py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-x-12">
+<!-- Large Item 1 -->
+<div class="md:col-span-7 space-y-6 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700" data-alt="Close-up editorial photography of a model wearing a heavy, structured black oversized hoodie. The fabric has a visible technical texture. The setting is a brutalist concrete structure with hard lighting creating deep shadows. Cinematic minimalism style with a monochrome color palette of deep blacks and charcoal greys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB48LTh3-i5D1fHi2qPW_YzPbdVLVrgABokY5QoTnWBq0vSXv0AGlta3dtgQAQD4yVEUnRn_D6QqZ2UfCNTdP8pii9ClDL29E6z5yf7DAZT_5DGnRlsofOguYEWj_ymMZgoPyViZPUIZfvqxiBQDDUmBYD5X07RQcWjdKMcAtotGko9bMs2sIJZEPkaEmPFZRf3QaBpVNHiNAHHUYD2hi7hzxyF-vvD97bPVBKlGg1CRFgho2SxydWBCEHVfmor6w9dT3FIuVYshyqq"/>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="bg-primary text-on-primary font-technical-sm text-[10px] px-2 py-1 uppercase tracking-widest">New Drop</span>
+<span class="bg-surface-container-highest text-primary font-technical-sm text-[10px] px-2 py-1 uppercase tracking-widest">Limited</span>
+</div>
+</div>
+<div class="flex justify-between items-end border-l border-outline-variant/30 pl-4">
+<div>
+<p class="font-technical-sm text-technical-sm text-outline uppercase tracking-[0.2em]">01. Outerwear</p>
+<h3 class="font-headline-md text-headline-md uppercase mt-1">Oversized Hoodie 'Obsidian'</h3>
+</div>
+<div class="text-right">
+<p class="font-label-md text-label-md">$185.00</p>
+<p class="font-technical-sm text-[10px] text-outline uppercase">VAT Included</p>
+</div>
+</div>
+</div>
+<!-- Small Item 1 -->
+<div class="md:col-span-4 md:col-start-9 md:pt-32 space-y-6 group cursor-pointer">
+<div class="relative overflow-hidden aspect-square bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700" data-alt="Professional studio shot of wide-leg cargo pants in a dark charcoal shade. The pants feature multiple technical pockets and strap details, reflecting an underground authority streetwear vibe. Lighting is focused and sharp, emphasizing the construction of the garment against a dark, moody background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyCfWdoGKKrjkm9Byql7vArzE_pOfDgHibnQ7Qgs0WwUCEEpvIBH2gWIZUfI4ABi4kSkoxdgMZGl2QfmDvkgFitzYzkLniVkzT03qH-QUK4RfRs2NZr7tih2ZlkMXCpFW1PbsSyxxS0LQJRm_kqn_cu2WJCckJiw4oatKhFIkVqCK7gptnH4I4_BfhBl5j1TJF_9xod8WX1tAB9hu4nqpaJhfPbWsuJxr6e0VqWpZUHsWsfCpK4amgouf90VscPLzmJorqelM--NaW"/>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="font-technical-sm text-technical-sm text-outline uppercase tracking-[0.2em]">02. Bottoms</p>
+<h3 class="font-headline-md text-headline-md uppercase mt-1">Cargo Pants 'Void'</h3>
+<p class="font-label-md text-label-md mt-2">$210.00</p>
+</div>
+</div>
+<!-- Mid Item 1 -->
+<div class="md:col-span-5 space-y-6 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700" data-alt="An editorial fashion shot of a technical jacket made from a matte, dark grey water-resistant material. The model is positioned in a mysterious urban environment with smoke effects swirling at the edges. High-contrast lighting highlights the metallic zippers and technical seams of the jacket. Luxurious brutalism aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAef8R7bPRJq72r_dz8vQp3yH0rdKPTodDIGmVJ0MS3aTWteTAi7R03FQUzCfHWfsuHk55OyOkIXCrriBBwuObl2TnH_hqxbvSzEqG1Kn9XcmUWNIUEIAqE2n9B-V_cbgSf6EbFRr5qmMoKuElgKSAt7F3NDTf2_RiluSUk0Blr3Xp18ozvB8P6SkX2jj8p87to7_axBPfAr0sivY90l2lEqqY6FGhH17F2CI5nSiRLp2_qrJGMbHITDP6p4v5AtEki9A5bwnw779Dn"/>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="font-technical-sm text-technical-sm text-outline uppercase tracking-[0.2em]">03. Shell</p>
+<h3 class="font-headline-md text-headline-md uppercase mt-1">Tech Jacket 'Eclipse'</h3>
+<p class="font-label-md text-label-md mt-2">$345.00</p>
+</div>
+</div>
+<!-- Editorial Block -->
+<div class="md:col-span-7 md:flex items-center justify-center p-12 bg-surface-container-lowest border border-outline-variant/20 relative overflow-hidden">
+<div class="relative z-10 text-center space-y-6">
+<h2 class="font-display-mobile text-display-mobile uppercase italic tracking-tighter text-outline/30 leading-none">IDENTIDAD<br/>ACTITUD<br/>CULTURA</h2>
+<p class="font-body-lg text-body-lg max-w-xs mx-auto text-on-surface-variant">La esencia de lo que somos se forja en el asfalto. Una visión técnica del futuro urbano.</p>
+<a class="inline-block border-b border-primary text-label-md font-label-md py-2 hover:tracking-widest transition-all" href="#">LEER EDITORIAL</a>
+</div>
+<div class="absolute bottom-0 right-0 opacity-10 float-anim">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'wght' 100;">blur_on</span>
+</div>
+</div>
+<!-- Large Item 2 -->
+<div class="md:col-span-12 space-y-8 group cursor-pointer">
+<div class="relative overflow-hidden h-[614px] bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700" data-alt="Wide cinematic shot of a collection lookbook. Multiple models stand in a vast, dark industrial warehouse space. They are wearing various pieces from the Onyx collection, including oversized hoodies and tech jackets. The lighting is theatrical, with top-down spotlights creating a mysterious and exclusive underground atmosphere. Dominant obsidian and charcoal colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6MmQ3Gx9DfaJnpujBQHdP8EPfvy-bO0dtXTvIDFjtm8Ns_4aGDHat1_c3t-xmuHjjXR6RL5LMqGgLvY4AnysW-AY0kYu8ZThXsFxa1obMwyjXroN2oAXdorXqKOvV6bXQee30BABbfM_x_InO5vu0ofO34HplmNOUKL8XFl3oDjNUopcAdGlYozqCSpDswTWYEwjOEhO6MVHhnXrOx8iTVHjDgyX0HJeG3KFP2Zu9i0z5GRb8XUogMUGIE28nk8QtLMYercS8oB-U"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-12 left-12">
+<h3 class="font-display-lg text-display-mobile uppercase tracking-tighter">VIEW FULL LOOKBOOK</h3>
+<p class="font-technical-sm text-technical-sm tracking-[0.5em] mt-2">AUTUMN / WINTER 2024</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="bg-surface-container-low py-section-gap px-margin-edge border-y border-outline-variant/10">
+<div class="max-w-2xl mx-auto text-center space-y-10">
+<div class="space-y-4">
+<h2 class="font-headline-md text-headline-md uppercase tracking-widest">JOIN THE UNDERGROUND</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Recibe notificaciones prioritarias para los próximos lanzamientos exclusivos y acceso anticipado al archivo.</p>
+</div>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-transparent border-b border-white py-4 font-technical-sm text-technical-sm focus:outline-none focus:border-outline transition-colors uppercase placeholder:text-outline/50" placeholder="EMAIL@ADDRESS.COM" type="email"/>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-12 py-4 hover:bg-transparent hover:text-primary border border-primary transition-all uppercase">Suscribirse</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center w-full px-margin-edge py-element-loose mt-section-gap">
+<div class="flex flex-col gap-2 items-center md:items-start mb-8 md:mb-0">
+<span class="text-headline-md font-headline-md text-primary tracking-widest uppercase">ZAKURA</span>
+<p class="text-technical-sm font-technical-sm opacity-60">© 2024 ZAKURA STREETWEAR. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Shipping</a>
+<a class="text-on-surface-variant hover:text-primary transition-all underline font-technical-sm text-technical-sm" href="#">Returns</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline">language</span>
+<span class="font-technical-sm text-technical-sm text-outline">SAN LUIS, ARG</span>
+</div>
+</footer>
+<!-- SideNavBar (Hidden by default, triggered by mobile menu) -->
+<div class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 md:hidden" id="mobile-nav">
+<div class="fixed left-0 top-0 h-full w-80 bg-background dark:bg-background shadow-2xl translate-x-[-100%] transition-transform duration-500 p-8 flex flex-col justify-between">
+<div class="space-y-12">
+<div class="flex justify-between items-center">
+<div>
+<h2 class="text-headline-md font-headline-md font-bold text-primary">ZAKURA</h2>
+<p class="font-technical-sm text-technical-sm text-outline">EST. 2024</p>
+</div>
+<button class="text-primary" onclick="toggleMenu()"><span class="material-symbols-outlined">close</span></button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="bg-white text-black font-bold px-4 py-3 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 hover:text-primary hover:bg-white/10 transition-all flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">new_releases</span>
+<span class="font-label-md text-label-md">New Arrivals</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 hover:text-primary hover:bg-white/10 transition-all flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-label-md text-label-md">Best Sellers</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 hover:text-primary hover:bg-white/10 transition-all flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+</nav>
+</div>
+<div class="space-y-6">
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 tracking-widest">VIEW COLLECTIONS</button>
+<div class="flex gap-4">
+<a class="font-technical-sm text-technical-sm text-outline" href="#">Privacy</a>
+<a class="font-technical-sm text-technical-sm text-outline" href="#">Terms</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script -->
+<script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobile-nav');
+            const menu = nav.querySelector('div');
+            const isOpen = nav.classList.contains('opacity-100');
+            
+            if (isOpen) {
+                nav.classList.replace('opacity-100', 'opacity-0');
+                nav.classList.add('pointer-events-none');
+                menu.style.transform = 'translateX(-100%)';
+            } else {
+                nav.classList.replace('opacity-0', 'opacity-100');
+                nav.classList.remove('pointer-events-none');
+                menu.style.transform = 'translateX(0)';
+            }
+        }
+
+        // Parallax effect on scroll for image grayscale
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY;
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                const rect = img.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const offset = (window.innerHeight - rect.top) / window.innerHeight;
+                    // Subtly shift grayscale based on scroll
+                    // img.style.filter = `grayscale(${Math.max(0, 1 - offset)})`;
+                }
+            });
+        });
+    </script>
+</body></html>
