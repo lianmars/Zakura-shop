@@ -6,6 +6,12 @@ import { PRODUCTS } from "@/lib/mockData";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+export function generateStaticParams() {
+  return PRODUCTS.map((product) => ({
+    id: product.id,
+  }));
+}
+
 export default function ProductDetailPage() {
   const params = useParams();
   const router = useRouter();
