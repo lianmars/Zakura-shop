@@ -3,6 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import sakuraImg from "../../../public/images/sakura.png";
+
+import { StaticImageData } from "next/image";
 
 function CinematicSection({ 
   image, 
@@ -10,7 +13,7 @@ function CinematicSection({
   children, 
   priority = false 
 }: { 
-  image: string; 
+  image: string | StaticImageData; 
   title?: string; 
   children: React.ReactNode;
   priority?: boolean;
@@ -71,7 +74,7 @@ export default function AboutPage() {
     <div className="bg-black">
       {/* Intro Scene */}
       <CinematicSection 
-        image="/images/sakura.png" 
+        image={sakuraImg}
         title="SOBRE ZAKURA" 
         priority={true}
       >

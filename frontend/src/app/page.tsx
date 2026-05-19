@@ -6,11 +6,12 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { PRODUCTS } from "@/lib/mockData";
 import { useState, useEffect } from "react";
 
-const HERO_IMAGES = [
-  "/images/wallpaper-1.png",
-  "/images/wallpaper-2.png",
-  "/images/wallpaper-3.png"
-];
+import wallpaper1 from "../../public/images/wallpaper-1.png";
+import wallpaper2 from "../../public/images/wallpaper-2.png";
+import wallpaper3 from "../../public/images/wallpaper-3.png";
+import { StaticImageData } from "next/image";
+
+const HERO_IMAGES: StaticImageData[] = [wallpaper1, wallpaper2, wallpaper3];
 
 export default function Home() {
   const { scrollY } = useScroll();
